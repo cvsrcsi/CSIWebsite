@@ -4,9 +4,8 @@ import './nav.css'
 import {Divide as Menu} from 'hamburger-react';
 import { Link } from 'react-router-dom';
 
-function Nav() {
+function Nav({isMenuOpen, setIsMenuOpen}) {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(()=> { 
 
@@ -48,9 +47,9 @@ function Nav() {
       
         <div className="Menu Container">
           <div className="overlay"></div>
-          <Link to='/'>Home</Link>
-          <Link to='/events'>Events</Link>
-          <Link to='/workingbody'>Working Body</Link>
+          <Link onClick={()=>setIsMenuOpen(false)} to='/'>Home</Link>
+          <Link onClick={()=>setIsMenuOpen(false)} to='/events'>Events</Link>
+          <Link onClick={()=>setIsMenuOpen(false)} to='/workingbody'>Working Body</Link>
         </div>
       }
       

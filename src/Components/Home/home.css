@@ -264,17 +264,24 @@ div{
 
 .footerOne{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     height: 80px;
     font-size: 30px;
-    line-height: 38px;
+    line-height: 15px;
     width: 100%;
-    gap: 10px;
+    gap: 0px;
     font-weight: 500;
     color: #f4f4f4;
-    
+    margin-bottom: 20px;
     padding-top: 30px;
     width: 100vw;
+}
+
+.footerOne p{
+  font-size: 20px;
+  opacity: 0.8;
 }
 
 .footer .logo{
