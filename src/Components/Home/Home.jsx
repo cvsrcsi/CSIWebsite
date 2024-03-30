@@ -178,7 +178,7 @@ function Home() {
           <div className="aboutCSIButton">Gallery</div>
 
           <div className="contentBox">
-            <Carousel showIndicators={false} showThumbs={false} infiniteLoop={true} dynamicHeight={false} centerMode={true} autoPlay={true} interval={3000} centerSlidePercentage={100}>
+            <Carousel className='carouselContainer' showIndicators={false} showThumbs={false} infiniteLoop={true} dynamicHeight={false} centerMode={true} autoPlay={true} interval={3000} centerSlidePercentage={100}>
               {carouselData.map((ele)=>(
                 <div className="carditem">
                   <img src={ele.src} alt="" />

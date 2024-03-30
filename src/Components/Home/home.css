@@ -95,6 +95,12 @@
     padding: 10px 50px;
 }
 
+.carouselContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 .SectionTwo{
     /* margin-top:90px; */
