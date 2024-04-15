@@ -1,0 +1,82 @@
+:root{
+  --primary:#13387F;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Integral CF'; */
+  font-family: 'Montserrat';
+}
+
+body{
+  background-color: #0C001C;
+  color: #fff;
+  overflow-x: hidden;
+  
+}
+/* 
+.randomBox1{
+z-index: -1;
+position: absolute;
+width: 300px;
+height: 295px;
+left: 540px;
+top: 782px;
+
+background: #203883;
+filter: blur(300px);
+
+}
+
+.randomBox3{
+z-index: -1;
+position: absolute;
+width: 300px;
+height: 295px;
+left: 574px;
+top: -31px;
+
+background: #1DEEC7;
+filter: blur(300px);
+
+}
+
+.randomBox2{
+z-index: -1;
+position: absolute;
+width: 300px;
+height: 295px;
+left: -43px;
+top: 410px;
+
+background: #173880;
+filter: blur(250px);
+
+}
+
+.randomBox4{
+z-index: -1;
+position: absolute;
+width: 300px;
+height: 295px;
+left: 1227px;
+top: 379px;
+
+background: #203982;
+filter: blur(300px);
+
+}
+
+.randomBox5{
+z-index: -1;  
+position: absolute;
+width: 300px;
+height: 405px;
+left: 712px;
+top: 754px;
+
+background: #01FFC9;
+filter: blur(350px);
+
+} */

@@ -1,0 +1,669 @@
+
+:root{
+    --primary: #13387F;
+}
+
+.container{
+    position: relative;
+}
+
+.homeContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+    /* font-size: 60px; */
+}
+
+.SectionOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+    padding-bottom:100px;
+    
+    min-height: 60vh;
+    padding-top: 22vh;
+
+    /* flex-direction: column; */
+}
+
+.SectionOne .contentOne{
+    margin-bottom: 10px;
+    line-height: 80px;
+    font-weight: 800;
+    font-size: 80px;
+    text-align: center;
+    width: 860px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-right: -40px;
+}
+
+.SectionOne .content {
+    
+    font-size: 11px;
+}
+
+.typing{
+    font-weight: 700;
+    color: #36DBFF;
+}
+
+.animationOne{
+    width: 760px;
+    scale:1.2;
+    margin-right: -40px;
+}
+
+.exploreButton {
+    scale: 0.8;
+    border: 1px solid white; /* Increased border thickness for visibility */
+    padding: 24px 64px;
+    gap: 10px; /* Consider using margin or alternative spacing methods for wider browser compatibility */
+    background: linear-gradient(83.78deg, #C04BAB 4.52%, #5582DD 89.74%), #5582DD;
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: #F4F4F4;
+    transition: background 0.2s ease; /* Transition specifically for the background property */
+}
+
+.exploreButton:hover {
+    background: rgba(0, 0, 0, 0); 
+    border-color: white; 
+}
+
+.SectionOne .contentOne .desc{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    line-height: 25px;
+    padding: 10px 50px;
+}
+
+.carouselContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.SectionTwo{
+    /* margin-top:90px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutCSIButton{
+    border: 1px solid white; /* Increased border thickness for visibility */
+    padding: 24px 84px;
+    gap: 10px; /* Consider using margin or alternative spacing methods for wider browser compatibility */
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.07em;
+    cursor: pointer;
+    color: #F4F4F4;
+    transition: background 0.1s ease;
+    /* width: 400px; */
+
+    background: linear-gradient(83.78deg, #4BC0B9 4.52%, #5582DD 89.74%), #5582DD;
+    border-radius: 24px;
+
+}
+
+.SectionTwo .contentBox{
+    margin: 0px 40px ;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: rgba(0, 163, 255, 0.06);
+    border-radius: 50px;
+    margin-top: -40px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 37px;
+    /* height: 200px; */
+    color: #F4F4F4;
+}
+
+.SectionTwo .contentBox .content{
+
+text-align: center;
+letter-spacing: -0.005em;
+
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card{
+    margin-top: 20px;
+    height: 700px;
+    background-color: #5582DD;
+    border-radius: 50px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.card .image{
+    width: 280px;
+    /* margin-top: -300px; */
+}
+  
+.card .title{
+    font-size: 33px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+.card .cardcontent{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 12px;
+    padding-left:  20px;
+    padding-right: 20px;
+}
+
+.card .cardcontent ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contentBox .carditem img{
+    width:500px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+
+.Blurred1{
+z-index: -1;  
+width: 300px;
+height: 405px;
+position: absolute;
+top: 0;
+
+background: #01FFC9;
+filter: blur(370px);
+}
+
+.Blurred2{
+z-index: -1;  
+width: 300px;
+height: 405px;
+position: absolute;
+top:0;
+left:0;
+
+background: #01FFC9;
+filter: blur(400px);
+}
+
+.Blurred3{
+    z-index: -1;  
+width: 200px;
+height: 205px;
+position: absolute;
+top:0;
+right:0;
+
+background: #01FFC9;
+filter: blur(380px);
+}
+
+div{
+    overflow: visible;
+    max-width: 100vw;
+}
+
+.homeContainer{
+    overflow-x: hidden;
+}
+
+.footer{
+    height: 450px;
+    background-color: #01102b;
+    width: 100vw;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.footerOne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 30px;
+    line-height: 15px;
+    width: 100%;
+    gap: 0px;
+    font-weight: 500;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    width: 100vw;
+}
+
+.footerOne p{
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.footer .logo{
+    border-radius: 50%;
+    height: 70px;
+    /* margin-left: 40px; */
+
+}
+
+.h2{
+    margin-top: 10px;
+font-size: 25px;
+
+}
+
+.links{
+    display: flex;
+    gap: 30px;
+    /* margin-left: 60px; */
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+
+
+a{
+    color: white;
+    transition: 0.2s ease;
+}
+
+a:hover{
+    opacity:0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    overflow: hidden;
+    height: 5rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 24px;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #3bf2ff 10%,#5582DD 45%, #C04BAB 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  #container-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 24px;
+  }
+  
+  strong {
+    z-index: 2;
+    /* font-family: 'Avalors Personal Use'; */
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-shadow: 0 0 2px white;
+  }
+  
+  #glow {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+  }
+  
+  .circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+  }
+  
+  .circle:nth-of-type(1) {
+    background: rgba(45, 206, 255, 0.636);
+  }
+  
+  .circle:nth-of-type(2) {
+    background: rgba(61, 191, 252, 0.704);
+  }
+  
+  .btn:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1)
+  }
+  
+  .btn:active {
+    border: double 4px #01FFC9;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+  }
+  
+  .btn:active .circle {
+    background: #01FFC9;
+  }
+  
+  #stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+  }
+  
+  #stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+  }
+  
+  #stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+  }
+  
+  #stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+  }
+  
+  #stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(-135rem);
+    }
+  }
+  
+  @keyframes animStarRotate {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes gradient_301 {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes pulse_3011 {
+    0% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .homeContainer{
+        height: auto;
+        font-size: 40px;
+    }
+
+    .SectionOne .contentOne{
+        font-size: 36px;
+        line-height: 40px;
+        margin-right: 0;
+    }
+
+    .SectionOne .contentOne .desc{
+        font-size: 14px;
+        line-height: 18px;
+        width: 80%;
+        margin-top: -40px;
+        margin-bottom: 0;
+    }
+
+    .SectionOne{
+        flex-direction: column;
+        padding:0;
+        padding-top: 150px;
+    }
+
+    .animationOne{
+        width: 100vw;
+        margin-top:50px;
+    }
+    
+    .Blurred2{
+        z-index: -1;  
+        width: 300px;
+        height: 405px;
+        position: absolute;
+        top:50%;
+        left:0;
+        
+        background: #01FFC9;
+        opacity: 0;
+        filter: blur(500px);
+    }
+
+    .Blurred3{
+     bottom: 0;
+     height: 100px;
+     filter: blur(350px)  
+    }
+
+    .exploreButton{
+        font-size: 25px;
+        padding: 20px 40px;
+        margin-top:-30px;
+    }
+
+    .aboutCSIButton{
+        font-size: 25px;
+        padding: 12px 40px;
+        font-size: 20px;
+        margin-top: 70px;
+    }
+
+    .SectionTwo .contentBox .content{
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0px;
+    }
+
+    .cards{
+        gap: 0px;
+    }
+
+    .card{
+        scale:0.85;
+    }
+
+    .contentBox .carditem img{
+        width:300px;
+        height: 300px;
+        object-fit: cover;
+        margin-top: 20px;
+        border-radius: 20px;
+        
+    }
+    
+    .contentBox p{
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+
+    .btn{
+        width: 16rem;
+    }
+
+    strong{
+        font-size: 20px;
+    }
+
+    .footer{
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .h2{
+        font-size: 20px;
+    }
+    .links{
+        font-size: 15px;
+    }
+    .footerOne{
+        font-size: 22px;
+        margin-bottom: -20px;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+.Blurred1, .Blurred2, .Blurred3 {
+    z-index: -10;
+    width: 300px;
+    height: 405px;
+    filter: blur(370px);
+    animation: glowAnimation 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowAnimation {
+    from {
+        opacity: 0.5;
+        filter: blur(350px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(320px);
+    }
+}

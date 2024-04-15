@@ -1,0 +1,73 @@
+.eventcards{
+    padding-top: 120px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    justify-content: center;
+}
+.carouselcontainer{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.eventcards .card {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    padding-bottom: 20px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 368px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+    position: relative; /* Added */
+  }
+
+  
+  .eventcards .card .image-container {
+    max-width: 80%; /* Added */
+    max-height: 50%; /* Added */
+    overflow: hidden; /* Added */
+  }
+  
+  .eventcards .card .image-container img {
+    width: 100%; /* Added */
+    height: auto; /* Added */
+  }
+  
+  .eventcards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+  .eventcards a{
+    text-decoration: none;
+  }
+
+  .eventcards .card p.second-text {
+    margin-top: 10px;
+    font-size: .7em;
+    padding-bottom: 20px;
+  }
+  
+  .eventcards .card p.objective {
+    margin-top: 20px;
+    font-size: .8em;
+    line-height: 1.2em;
+  }
+  
+  .eventcards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .eventcards:hover > .card:not(:hover) {
+    /* filter: blur(0.5px); */
+    transform: scale(0.9, 0.9);
+  }
+  
